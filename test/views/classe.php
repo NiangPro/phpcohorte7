@@ -1,8 +1,3 @@
-
-<?php 
-    $classes = recupererLesClasses();
-?>
-
 <div class="container mt-3">
     <div class="row">
         <h1 class="col-md-10">Liste des classes</h1>

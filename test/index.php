@@ -1,7 +1,7 @@
 <?php  
 
-require_once("database.php");  
-require_once("entete.php"); 
+require_once("models/database.php");  
+require_once("includes/entete.php"); 
 
 if (isset($_GET["page"])) {
 //    routeur 
@@ -10,7 +10,7 @@ if (isset($_GET["page"])) {
             require_once("inscription.php");
             break;
         case "classe":
-            require_once("classe.php");
+            require_once("controllers/classeController.php");
            break; 
         
         default:
@@ -20,4 +20,4 @@ if (isset($_GET["page"])) {
 }else{
     require_once("accueil.php");
 }
-require_once("pied.php");  ?>
+require_once("includes/pied.php");  ?>
