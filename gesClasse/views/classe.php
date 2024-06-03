@@ -1,4 +1,4 @@
-<div class="container mt-3 card">
+<div class="container col-md-8 mt-3 card">
     <div class="card-header bg-danger text-white row">
         <h1 class="col-md-10">Liste des classes</h1>
         <div class="col-md-2 text-end">
@@ -20,7 +20,7 @@
                         <td><?=  $c->nom  ?></td>
                         <td><?=  $c->taille  ?></td>
                         <td>
-                            <a href="" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="?page=classe&type=edit&id=<?= $c->id ?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
                             <a href="" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
