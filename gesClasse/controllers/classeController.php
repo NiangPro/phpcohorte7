@@ -16,6 +16,12 @@ if (isset($_POST["modifier"])) {
     }
 }
 
+if (isset($_GET["idDeleting"])) {
+    supprimerUneClasse($_GET["idDeleting"]);
+    header("Location:?page=classe");
+    exit();
+}
+
 $classes = listeDesClasses();
 
 if (isset($_GET["type"])) {

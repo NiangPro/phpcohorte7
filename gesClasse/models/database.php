@@ -66,3 +66,13 @@ function editerClasse($id, $nom, $taille){
         die("Erreur: ".$th->getMessage());
     }
 }
+
+function supprimerUneClasse($id){
+    global $db;
+    try {
+        $q = $db->prepare("DELETE FROM classe  WHERE id =:id");
+        return $q->execute(["id" => $id]);
+    } catch (PDOException $th) {
+        die("Erreur: ".$th->getMessage());
+    }
+}

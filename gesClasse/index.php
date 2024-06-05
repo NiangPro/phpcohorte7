@@ -8,7 +8,9 @@
             case 'classe':
                 require_once("controllers/classeController.php");
                 break;
-            
+            case 'eleve':
+                require_once("controllers/eleveController.php");
+                break;
             default:
             require_once("controllers/accueilController.php");
 
